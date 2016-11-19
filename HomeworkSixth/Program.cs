@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace HomeworkSixth
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            object[] oarray = new object[] { };
+            oarray.Any();
         }
     }
 }
