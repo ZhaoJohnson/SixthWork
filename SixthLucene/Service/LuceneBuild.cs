@@ -15,7 +15,7 @@ namespace SixthLucene.Service
 {
     public class LuceneBuild : ILuceneBulid
     {
-        private static string Path = "D:\\";
+        private static string Path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
         /// <summary>
 
         /// 建立索引模型
@@ -123,7 +123,7 @@ namespace SixthLucene.Service
         {
             Document doc = new Document();
 
-            doc.Add(new Field("id", ci.Id.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+            doc.Add(new Field("id", ci.Id.ToString(), Field.Store.NO, Field.Index.NOT_ANALYZED));
             doc.Add(new Field("title", ci.Title, Field.Store.YES, Field.Index.ANALYZED));//盘古分词
             doc.Add(new Field("productid", ci.ProductId.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
             doc.Add(new Field("categoryid", ci.CategoryId.ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
