@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SixthLucene.LuceneModel
+namespace SixthDAL.DbModel
 {
-    public class JdItemModel
+    public class JdBaseModel
     {
         public int Id { get; set; }
         public Nullable<long> ProductId { get; set; }

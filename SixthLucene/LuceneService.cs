@@ -1,5 +1,4 @@
 ﻿using SixthDAL;
-using SixthLucene.LuceneModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,10 +34,10 @@ namespace SixthLucene
 
         private void BuildLucene(IEnumerable<JdModel> list)
         {
-            Parallel
+            ParallelLoopResult plResult = new ParallelLoopResult();
+
             Parallel.ForEach(list, p => p.Id = 2);
             ParallelOptions po = new ParallelOptions();
-            po.
         }
 
         public virtual void GetData<TResult>(Type t) where TResult : class
