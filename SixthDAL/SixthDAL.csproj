@@ -162,6 +162,7 @@
     <Compile Include="DbModel\JD_Commodity_030.cs">
       <DependentUpon>JDWarmData.tt</DependentUpon>
     </Compile>
+    <Compile Include="JdModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SixthEntityFramework.cs" />
   </ItemGroup>

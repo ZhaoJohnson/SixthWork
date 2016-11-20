@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkSixth", "HomeworkSi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthDAL", "SixthDAL\SixthDAL.csproj", "{80C394B1-52CD-4D67-BE00-2F693631EC52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SixthLucene", "SixthLucene\SixthLucene.csproj", "{392DB232-F26E-40AA-93CA-6D0E926D2A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{80C394B1-52CD-4D67-BE00-2F693631EC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80C394B1-52CD-4D67-BE00-2F693631EC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80C394B1-52CD-4D67-BE00-2F693631EC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392DB232-F26E-40AA-93CA-6D0E926D2A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392DB232-F26E-40AA-93CA-6D0E926D2A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392DB232-F26E-40AA-93CA-6D0E926D2A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392DB232-F26E-40AA-93CA-6D0E926D2A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
