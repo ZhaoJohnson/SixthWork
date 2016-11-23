@@ -65,19 +65,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Analyzer\BlankAnalyzer.cs" />
-    <Compile Include="Analyzer\BlankTokenizer.cs" />
-    <Compile Include="Analyzer\CommaAnalyzer.cs" />
-    <Compile Include="Analyzer\CommaTokenizer.cs" />
-    <Compile Include="Interface\ILuceneAnalyze.cs" />
-    <Compile Include="Interface\ILuceneBulid.cs" />
-    <Compile Include="Interface\ILuceneQuery.cs" />
     <Compile Include="LuceneBasic.cs" />
     <Compile Include="LuceneService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\LuceneBuild.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\tools by Johnson\20161118Advanced7Course19AttributeAOP\Ruanmou.LuceneProject\Ruanmou.LuceneProject\Ruanmou.LuceneProject.csproj">
+      <Project>{4C467AF3-74F7-4213-8323-B9D6B2F1FFEE}</Project>
+      <Name>Ruanmou.LuceneProject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SixthDAL\SixthDAL.csproj">
       <Project>{80C394B1-52CD-4D67-BE00-2F693631EC52}</Project>
       <Name>SixthDAL</Name>
@@ -87,9 +83,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LuceneModel\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

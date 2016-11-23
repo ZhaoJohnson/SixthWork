@@ -72,5 +72,14 @@ namespace SixthDAL
                 return ef.Database.SqlQuery<T>(strsql, new object[] { null }).ToList();
             });
         }
+
+        public IEnumerable<T> OffSetData<T>(Type t, int pageSize, int pageIndex)
+        {
+            return ExecEntityJdData(ef =>
+            {
+                string strsql = string.Format("SELECT * FROM {0} ORDER BY Id OFFSET ({1} -1) * {2} ROWS FETCH NEXT {2} ROWS ONLY; ;", t.Name, pageIndex, pageSize);
+                return ef.Database.SqlQuery<T>(strsql, new object[] { null }).ToList();
+            });
+        }
     }
 }
